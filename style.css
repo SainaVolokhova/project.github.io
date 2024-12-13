@@ -1,0 +1,50 @@
+/* 2. Бордюр рожевого кольору, товщиною 3 рх, суцільний */
+div {
+    border: 3px solid pink;
+}
+
+/* 3. Зовнішній відступ у блоків 5 рх */
+div {
+    margin: 5px;
+}
+
+/* 4. Фон всіх блоків голубим */
+div {
+    background-color: lightblue;
+}
+
+/* 5. Фон зовнішнього блоку жовтим */
+#outer-block {
+    background-color: yellow;
+}
+
+/* 6. Фон блоків 3, 4, 5 сірий */
+.inner-block {
+    background-color: gray;
+}
+
+/* 7. Внутрішній відступ 5рх */
+.inner-block {
+    padding: 5px;
+}
+
+/* 8. Ширина блоків 3, 4, 5 */
+#block-3 {
+    width: 25%;
+    float: left;
+}
+#block-4 {
+    width: 60%;
+    float: left;
+}
+#block-5 {
+    width: 13%;
+    float: left;
+}
+
+/* 9. Вирівнювання блоків в один ряд */
+#outer-block::after {
+    content: "";
+    display: table;
+    clear: both;
+}
